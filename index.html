@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="ROC" />
+
+	<!-- Stylesheets
+		============================================= -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+		<link rel="stylesheet" href="css/dark.css" type="text/css" />
+		<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+		<link rel="stylesheet" href="css/animate.css" type="text/css" />
+		<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+		<link rel="apple-touch-icon" sizes="57x57" href="images/ikonice/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/ikonice/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/ikonice/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/ikonice/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/ikonice/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/ikonice/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/ikonice/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/ikonice/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/ikonice/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/ikonice/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/ikonice/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/ikonice/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/ikonice/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<script src="https://kit.fontawesome.com/1b949c87da.js" crossorigin="anonymous"></script>
+
+
+		<title>ROC - Rise of Champions</title>
+
+		
+
+	</head>
+
+	<style>
+		@font-face { 
+			font-family: BigNoodleTitling;
+			src: url(../fonts/Big.ttf);
+		} 
+		@font-face { 
+			font-family: Shopie;
+			src: url(../fonts/Shopie.otf);
+		}
+	</style>
+	
+	
+	<script>
+function kurac() 
+{
+
+	var xhttp = new XMLHttpRequest();
+	
+	xhttp.onreadystatechange = function() {
+                if(this.status == 200 || this.status == 409)
+                {
+               if (this.readyState == 4 ) {
+				document.getElementById("texter").innerText=64-this.responseText;
+				document.getElementById("texter2").innerText=this.responseText;
+               }
+                               }
+           };
+           xhttp.open("GET", "http://rocserbiaback.herokuapp.com/Teams/count", false);
+           xhttp.setRequestHeader("Content-type", "application/json");
+           xhttp.send(null);
+}
+	</script>
+
+<body oncontextmenu="return false">
+
+<body>
+		<body style="background-image: url('images/banner24.jpg');     background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	">
+
+	<div id="wrapper" class="clearfix">
+
+
+
+		<!-- Header
+			============================================= -->
+			<div id="top-bar">
+
+				<div class="container clearfix">
+
+					<div class="col_half nobottommargin clearfix">
+
+					<!-- Top Social
+						============================================= -->
+						<div id="top-social">
+							<ul>
+								<li><a href="#" class="si-facebook"><span class="ts-icon"><i class="icon-facebook"></i></span><span class="ts-text">Facebook</span></a></li>
+								<li><a href="#" class="si-twitter"><span class="ts-icon"><i class="icon-twitch"></i></span><span class="ts-text">Twitch</span></a></li>
+
+								<li><a href="https://www.instagram.com/rocserbia" class="si-instagram"><span class="ts-icon"><i class="icon-instagram2"></i></span><span class="ts-text">Instagram</span></a></li>
+								<li><a href="https://www.youtube.com/channel/UCpdqKrRYZtYVzn02G5RIXGw" class="si-twitter"><span class="ts-icon"><i class="icon-youtube"></i></span><span class="ts-text">Youtube</span></a></li>
+							</ul>
+						</div><!-- #top-social end -->
+
+					</div>
+
+					<div class="col_half fright col_last clearfix nobottommargin">
+
+					<!-- Top Links
+						============================================= -->
+						<div class="top-links">
+							<ul>
+								<li><a href="#">PREUZMI</a>
+									<ul>
+										<li><a href="https://www74.zippyshare.com/d/vhhKbxwb/50507/rocAC.rar">ANTI-CHEAT</a></li>
+										<li><a href="https://filebin.net/l4ilp4e58887mak8/rocserbia.pdf?t=xeyix758">PDF</a></li>
+									</ul>
+								</li>
+								<li><a href="#">RASPORED</a></li>
+								<li><a href="#">KONTAKT</a></li>
+							</ul>
+						</div><!-- .top-links end -->
+
+					</div>
+
+				</div>
+
+			</div><!-- #top-bar end -->
+
+		<!-- Header
+			============================================= -->
+			<header id="header" class="sticky-style-2">
+
+				<div class="container clearfix">
+
+				<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="#" class="standard-logo"><img src="images/logo.png" alt=" "></a>
+
+					</div>
+
+					<ul class="header-extras">
+						<li>
+							<i class="i-plain icon-line2-envelope nomargin"></i>
+							<div class="he-text">
+								KONTAKT MAIL
+								<span style="color: #ff7e03">kontakt@rocserbia.com</span>
+							</div>
+						</li>
+
+
+
+					</ul>
+
+				</div>
+
+				<div id="header-wrap">
+
+				<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu" class="with-arrows style-2 center">
+
+						<div class="container clearfix">
+
+							<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+
+							<ul>
+								<li><a class="effect-shine" href="#"><i style="padding-top: 4px;" class="fas fa-home"></i>POCETNA</a></li>
+								<li><a class="effect-shine" href="o-nama.html"><div><i style="padding-top: 4px;" class="fas fa-info-circle"></i>O NAMA</div></a></li>
+								<li><a class="effect-shine" href="#"><div><i style="padding-top: 4px;" class="fas fa-calendar-alt"></i>RASPORED & TABELA</div></a></li>
+								<li><a class="effect-shine" href="prijava/index.html"><div><i style="padding-top: 4px;" class="fas fa-users"></i>PRIJAVA</div></a></li>
+								<li><a class="effect-shine" href="#"><div><i style="padding-top: 4px;" class="far fa-envelope"></i>KONTAKT</div></a></li>
+								
+
+
+
+							</ul>
+
+						<!-- Top Search
+							============================================= -->
+
+
+
+						</nav>
+
+					</div> 
+
+				</header>
+
+				<section id="slider" class="slider-element slider-parallax swiper_wrapper full-screen clearfix">
+
+					<div class="slider-parallax-inner">
+
+						<div class="swiper-container swiper-parent">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide dark" style="background-image: url('images/slider/swiper/1.jpg');">
+									<div class="container clearfix">
+										<div class="slider-caption slider-caption-center">
+											<h3 style="font-family: Shopie;">Rise of</h3>
+											<h2 data-animate="fadeInUp" style="font-family: BigNoodleTitling;">CHAMPIONS</h2>
+											<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">Counter-Strike Global Offensive turnir koji se uskoro odrzava, prijavi svoju ekipu još danas!</p>
+											<a href="prijava/index.html" class="btn-prijavi btn btn-primary btn-lg"><i class="fas fa-users"></i><b> PRIJAVA</b></a> <a href="#" class="btn-raspored btn btn-primary btn-lg"><i class="fas fa-list-ol"></i> <b>RASPORED</b> </a> <a href="#" class="btn btn-primary btn-lg btn-twitch"> <i class="fab fa-twitch"></i> <b>GLEDAJ</b></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
+							<div class="slider-arrow-right"><i class="icon-angle-right"></i></div>
+						</div>
+
+						<a href="#" data-scrollto="#content" data-offset="100" class="dark one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
+					</div>
+
+				</section>
+
+		<!-- Content
+			============================================= -->
+			<section id="content">
+
+				<div class="content-wrap">
+
+
+					<div class="container clearfix">
+						<div class="row clearfix">
+
+
+
+							<div class="clear"></div>
+
+
+
+
+
+
+				<!-- Brands
+					============================================= -->
+					
+					<div class="col-12">
+						<div class="fancy-title title-dotted-border title-center mb-4">
+							<h4>PARTNERI PROJEKTA </h4>
+						</div>
+
+						<ul class="clients-grid grid-8 nobottommargin clearfix">
+							<li><a href="#"><img src="images/clients/logo/1.png" alt="Clients"></a></li>
+							<li><a href="#"><img src="images/clients/logo/2.png" alt="Clients"></a></li>
+							<li><a href="#"><img src="images/clients/logo/3.png" alt="Clients"></a></li>
+							<li><a href="#"><img src="images/clients/logo/4.png" alt="Clients"></a></li>
+							<li><a href="#"><img src="images/clients/logo/5.png" alt="Clients"></a></li>
+							<li><a href="#"><img src="images/clients/logo/6.png" alt="Clients"></a></li>
+							<li><a href="#"><img src="images/clients/logo/7.png" alt="Clients"></a></li>
+							<li><a href="#"><img src="images/clients/logo/8.png" alt="Clients"></a></li>
+							<li><a href="#"><img src="images/clients/logo/9.png" alt="Clients"></a></li>
+							<li><a href="#"><img src="images/clients/logo/10.png" alt="Clients"></a></li>
+
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+
+
+
+
+				<!-- App Buttons
+					============================================= -->
+
+
+				</div>
+
+				<div class="section dark bottommargin-lg" style="height: 500px;">
+					<div class="container-fluid center clearfix vertical-middle">
+
+						<i style="font-size: 2rem;" class="fas fa-shield-virus"></i>
+
+
+						<div class="slider-caption slider-caption-center">
+							<br>
+							<h5 style="font-size: 2rem; font-weight: 700; font-family: 'Roboto', sans-serif; " data-animate="fadeInUp">ROC ANTI-CHEAT</h5>
+							<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">Razvili smo Anti-Cheat sistem kako bi se uverili da ce
+							na vrhu zavrsiti oni koji to stvarno zasluzuju.</p>
+							<a href="https://www74.zippyshare.com/d/vhhKbxwb/50507/rocAC.rar" class="btn-prijavi btn-primary btn-lg" ><i class="fas fa-arrow-circle-down"></i></i></i> Preuzmi</a>
+						</div>
+
+					</div>
+					<div class="video-wrap">
+						<video poster="https://static.videezy.com/system/resources/previews/000/012/744/original/Particles_8_-_49s_-_4k_res.mp4" preload="auto" loop autoplay muted>
+							<source src='https://static.videezy.com/system/resources/previews/000/012/744/original/Particles_8_-_49s_-_4k_res.mp4' type='video/mp4' />
+
+						</video>
+						<div class="video-overlay" style="background-color: rgba(0,0,0,0.6);"></div>
+					</div>
+				</div>
+
+
+				<div class="section pb-0 mb-0 clearfix" style="background: url(../img/bg2.png);">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 offset-1 bottommargin-lg d-flex flex-column align-self-center">
+								<h3 class="card-title t400 ls0">Preuzmi našu novu<br><b>mobilnu</b> aplikaciju</h3>
+								<span>Prati <b>rezultate</b> svih meceva na dogadjaju.</span>
+								<div class="mt-3">
+									<a href="#" class="btn-prijavi btn btn-primary btn-lg"><div><i class="icon-apple"></i> App Store </div></a>
+									<a href="#" class="btn-google btn btn-primary btn-lg"><div><i class="icon-googleplay"></i> Google P.</div></a>
+								</div>
+							</div>
+							<div class="col-md-4 d-none d-md-flex align-items-end">
+								<img src="images/app.png" alt="Image" class="nobottommargin">
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="https://filebin.net/l4ilp4e58887mak8/rocserbia.pdf?t=xeyix758" class="button button-full button-dark center tright bottommargin-lg">
+					<div class="container clearfix">
+						Preuzmite Pravilnik <i class="far fa-file-alt"></i>
+					</div>
+				</a>
+
+
+				<div class="row justify-content-between align-items-center">
+					<div class="col-lg-8 col-md-10 offset-lg-2 offset-md-1 bottommargin-lg">
+						<div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe src="https://streamable.com/e/ydt8bk" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+
+					</a>
+				</div> </div>
+
+			</section>
+
+
+
+
+
+
+
+
+			<footer id="footer" class="dark" style="background: url('images/footer-bg.jpg'); background-repeat: no-repeat;">
+
+				<div class="container">
+
+				<!-- Footer Widgets
+					============================================= -->
+					<div class="footer-widgets-wrap clearfix">
+
+						<div class="col_two_third">
+
+							<div class="widget clearfix">
+
+								<img src="images/footer-widget-logo.png" alt="" class="alignleft" style="margin-top: 8px; padding-right: 18px; border-right: 1px solid #4A4A4A;">
+
+								<p>Rise of Champions <b style="color: #fff">CS:GO</b> liga i turnir se sastoje od dve faze: <b style="color: #fff">Online kvalifikacije</b> i finalni <b style="color: #fff">LAN Turnir.</b>
+									Online kvalifikacije broje <b style="color: #fff">64</b> tima podeljenih u <b style="color: #fff">4</b> grupe.</p>
+
+									<div class="line" style="margin: 30px 0;"></div>
+
+									<div class="col_half">
+										<div class="widget clearfix">
+
+											<div class="d-none d-lg-block"><div class="clear" style="padding-top: 10px;"></div></div>
+
+											<div class="row">
+												<div class="col-lg-6 bottommargin-sm center">
+												<h3 style="font-size: 28px; font-weight: bold; color: #03fcf0;">
+												<div id="texter2"></div> </h3>
+												<div class="counter counter-small" style="color: #2CAACA;"><b><h3 style="font-size: 28px; font-weight: bold; color: #4feb34;"></h3></b></div>
+
+													<h5 class="nobottommargin">Prijavljenih Ekipa</h5>
+												</div>
+												
+												
+
+												<div class="col-lg-6 bottommargin-sm center col_last">
+												
+												<h3 style="font-size: 28px; font-weight: bold; color: #03fcf0;">
+												<div id="texter"></div> </h3>
+												
+												
+													<div class="counter counter-small" style="color: #2CAACA;"><b><h3 style="font-size: 28px; font-weight: bold; color: #03fcf0;">
+													<script>kurac();</script></h3></b></div> 
+													<h5 class="nobottommargin">Mesta Preostalo: </h5>
+												</div>
+												
+											</div>
+
+										</div>
+									</div>
+
+									<div class="col_half col_last">
+										<div class="widget subscribe-widget clearfix">
+											<h5><strong>Prijavite se</strong> i budite prvi koji će dobijati obaveštenja o takmičenju.</h5>
+											<div class="widget-subscribe-form-result"></div>
+											<form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="nobottommargin">
+												<div class="input-group divcenter">
+													<div class="input-group-prepend">
+														<div class="input-group-text"><i class="icon-email2"></i></div>
+													</div>
+													<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Unesite mail">
+													<div class="input-group-append">
+														<button class="btn btn-success" type="submit">Prijava</button>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="col_one_third col_last">
+
+								<div class="widget clearfix">
+									<h4>Instagram Objave</h4>
+									<div id="instagram-photos" class="instagram-photos masonry-thumbs grid-5" data-user="#" data-count="10" data-type="tag"></div>
+								</div>
+
+							</div>
+
+						</div><!-- .footer-widgets-wrap end -->
+
+					</div>	
+
+			<!-- Copyrights
+				============================================= -->
+				<div id="copyrights">
+
+					<div class="container clearfix">
+
+						<div style="color: #ccc" class="col_half">
+							<div style="color: #ccc" class="copyrights-menu copyright-links clearfix">
+								<a style="color: #ccc" href="#">Pocetna</a>/<a style="color: #ccc" href="o-nama.html">O nama</a>/<a style="color: #ccc" href="#">Raspored & Tabela</a>/<a style="color: #ccc" href="prijava/index.html">Prijava</a>/<a style="color: #ccc" href="#">Kontakt</a>
+							</div>
+							Copyrights &copy; 2020 All Rights Reserved by <b style="color: #fff">ROC Serbia.</b>
+						</div>
+
+						<div class="col_half col_last tright">
+							<div class="fright clearfix">
+								<a href="#" class="social-icon si-small si-borderless nobottommargin si-facebook">
+									<i style="color: #fff" class="icon-facebook"></i>
+									<i class="icon-facebook"></i>
+								</a>
+
+								<a href="https://www.instagram.com/rocserbia" class="social-icon si-small si-borderless nobottommargin si-twitter">
+									<i style="color: #fff" class="icon-instagram2"></i>
+									<i class="icon-instagram2"></i>
+								</a>
+
+
+
+								<a href="#" class="social-icon si-small si-borderless nobottommargin si-vimeo">
+									<i style="color: #fff" class="icon-twitch"></i>
+									<i class="icon-twitch"></i>
+								</a>
+
+
+								<a href="https://www.youtube.com/channel/UCpdqKrRYZtYVzn02G5RIXGw" class="social-icon si-small si-borderless nobottommargin si-linkedin">
+									<i style="color: #fff" class="icon-youtube"></i>
+									<i class="icon-youtube"></i>
+								</a>
+							</div>
+						</div>
+
+					</div>
+
+				</div><!-- #copyrights end -->
+
+			</footer><!-- #footer end -->
+
+
+		</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+		============================================= -->
+		<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- External JavaScripts
+		============================================= -->
+		<script src="js/jquery.js"></script>
+		<script src="js/plugins.js"></script>
+
+	<!-- Footer Scripts
+		============================================= -->
+		<script src="js/functions.js"></script>
+
+
+	</body>
+	</html>

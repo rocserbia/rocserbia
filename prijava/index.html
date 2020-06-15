@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ROC - Prijavi Tim</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/ikonice/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/ikonice/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/ikonice/favicon-16x16.png">
+    <link rel="manifest" href="images/ikonice/site.webmanifest">
+    <link rel="mask-icon" href="images/ikonice/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+    <script type="text/javascript">
+
+
+        function posaljiPrijavu()
+        {
+
+            
+            var igrac1 = {
+
+
+    
+                ime: document.getElementById("igrac1").value.split(' ')[0],
+                nick: document.getElementById("nick1").value,
+                prezime: document.getElementById("igrac1").value.split(' ')[1],
+                email: document.getElementById("email1").value,
+                broj: document.getElementById("telefon1").value
+
+            };
+            var igrac2 = {
+                ime: document.getElementById("igrac2").value.split(' ')[0],
+                nick: document.getElementById("nick2").value,
+                prezime: document.getElementById("igrac2").value.split(' ')[1],
+                email: document.getElementById("email2").value,
+                broj: document.getElementById("telefon2").value
+
+            };
+            var igrac3 = {
+                ime: document.getElementById("igrac3").value.split(' ')[0],
+                nick: document.getElementById("nick3").value,
+                prezime: document.getElementById("igrac3").value.split(' ')[1],
+                email: document.getElementById("email3").value,
+                broj: document.getElementById("telefon3").value
+
+            };
+            var igrac4 = {
+                ime: document.getElementById("igrac4").value.split(' ')[0],
+                nick: document.getElementById("nick4").value,
+                prezime: document.getElementById("igrac4").value.split(' ')[1],
+                email: document.getElementById("email4").value,
+                broj: document.getElementById("telefon4").value
+
+            };
+            var igrac5 = {
+                ime: document.getElementById("igrac5").value.split(' ')[0],
+                nick: document.getElementById("nick5").value,
+                prezime: document.getElementById("igrac5").value.split(' ')[1],
+                email: document.getElementById("email5").value,
+                broj: document.getElementById("telefon5").value
+
+            };
+
+            var tim = {
+                ime: document.getElementById("imetima").value,
+                players: [igrac1, igrac2, igrac3, igrac4, igrac5]
+            };
+
+            var json = JSON.stringify(tim);
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if(this.status == 200 || this.status == 409)
+                {
+               if (this.readyState == 4 ) {
+                   alert(this.responseText);
+               }
+                               }
+           };
+           xhttp.open("POST", "http://rocserbiaback.herokuapp.com/Teams/add", false);
+           xhttp.setRequestHeader("Content-type", "application/json");
+           xhttp.send(json);
+        
+
+       }
+
+
+
+   </script>
+
+
+
+   <!-- Main css -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <body style="background-image: url('images/banner26.jpg');     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    ">
+   
+
+        <div class="main">
+
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-img">
+                        <img src="images/form-img.jpg" alt="">
+                        <div class="signup-img-content">
+                            <h2>Prijavi tim </h2>
+                            <p>dok jos mozes!</p>
+                        </div>
+                    </div>
+                    <div class="signup-form">
+                        <form method="POST" class="register-form" id="register-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                   <div class="form-select">
+                                    <div class="label-flex">
+                                        <label for="meal_preference">Logo Tima</label>
+                                        <a href="#" class="form-link">Da li posedujete logo?</a>
+                                    </div>
+                                    <div class="select-list">
+                                        <select name="meal_preference" id="meal_preference">
+                                            <option value="Da">Da</option>
+                                            <option value="Da">Da</option>
+                                            <option value="Ne">Ne</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-radio">
+                                    <div class="label-flex">
+                                        <label for="payment">Kako ste culi za nas?</label>
+                                        <a href="#" class="form-link">Informativno</a>
+                                    </div>
+                                    <div class="form-radio-group">            
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="payment" id="cash" checked>
+                                            <label for="cash">Internet</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="payment" id="cheque">
+                                            <label for="cheque">Flajer</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="payment" id="demand">
+                                            <label for="demand">Prijatelj</label>
+                                            <span class="check"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-input">
+                                    <label for="company" class="required">Ime Tima</label>
+                                    <input type="text" name="company" id="imetima" placeholder="Unesi Ime Tima"/>
+                                </div>
+                                <div class="form-input">
+                                    <label for="chequeno">Igrac #1.</label>
+                                    <input type="text" name="chequeno" id="igrac1" placeholder="Ime i Prezime"/>
+                                    <div class="nick">
+                                    <input type="text" name="chequeno" id="nick1" placeholder="Nickname"/>
+                                     </div>
+                                </div>
+                                <div class="form-input">
+                                    <label for="email" class="required">Email</label>
+                                    <input type="text" name="email" id="email1" placeholder="Unesi mail"/>
+                                </div>
+                                <div class="form-input">
+                                    <label for="phone_number" class="required">Broj Telefona</label>
+                                    <input type="text" name="phone_number" id="telefon1" placeholder="Unesi broj" />
+                                </div>
+                                <div class="form-input">
+                                    <label for="chequeno">Igrac #2.</label>
+                                    <input type="text" name="chequeno" id="igrac2" placeholder="Ime i Prezime"/>
+                                                                        <div class="nick">
+                                    <input type="text" name="chequeno" id="nick2" placeholder="Nickname"/>
+                                     </div>
+                                </div>
+                                <div class="form-input">
+                                    <label for="email" class="required">Email</label>
+                                    <input type="text" name="email" id="email2" placeholder="Unesi mail"/>
+                                </div>
+                                <div class="form-input">
+                                    <label for="phone_number" class="required">Broj Telefona</label>
+                                    <input type="text" name="phone_number" id="telefon2" placeholder="Unesi broj" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+
+
+                                <div class="form-input">
+                                    <label for="chequeno">Igrac #3.</label>
+                                    <input type="text" name="chequeno" id="igrac3" placeholder="Ime i Prezime"/>
+                                                                        <div class="nick">
+                                    <input type="text" name="chequeno" id="nick3" placeholder="Nickname"/>
+                                     </div>
+                                </div>
+                                <div class="form-input">
+                                    <label for="email" class="required">Email</label>
+                                    <input type="text" name="email" id="email3" placeholder="Unesi mail"/>
+                                </div>
+                                <div class="form-input">
+                                    <label for="phone_number" class="required">Broj Telefona</label>
+                                    <input type="text" name="phone_number" id="telefon3" placeholder="Unesi broj" />
+                                </div>
+                                <div class="form-input">
+                                    <label for="chequeno">Igrac #4.</label>
+                                    <input type="text" name="chequeno" id="igrac4" placeholder="Ime i Prezime" />
+                                                                        <div class="nick">
+                                    <input type="text" name="chequeno" id="nick4" placeholder="Nickname"/>
+                                     </div>
+                                </div>
+                                <div class="form-input">
+                                    <label for="email" class="required">Email</label>
+                                    <input type="text" name="email" id="email4" placeholder="Unesi mail"/>
+                                </div>
+                                <div class="form-input">
+                                    <label for="phone_number" class="required">Broj Telefona</label>
+                                    <input type="text" name="phone_number" id="telefon4" placeholder="Unesi broj" />
+                                </div>
+                                <div class="form-input">
+                                    <label for="chequeno">Igrac #5.</label>
+                                    <input type="text" name="chequeno" id="igrac5" placeholder="Ime i Prezime"/>
+                                                                        <div class="nick">
+                                    <input type="text" name="chequeno" id="nick5" placeholder="Nickname"/>
+                                     </div>
+                                </div>
+                                <div class="form-input">
+                                    <label for="email" class="required">Email</label>
+                                    <input type="text" name="email" id="email5" placeholder="Unesi mail"/>
+                                </div>
+                                <div class="form-input">
+                                    <label for="phone_number" class="required">Broj Telefona</label>
+                                    <input type="text" name="phone_number" id="telefon5" placeholder="Unesi broj" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-submit">
+                            <input type="submit" id="submit" class="submit" form="form1" value="Posalji" onclick="posaljiPrijavu()" />
+                            <!--<input type="submit" onclick="posaljiPrijavu()" /> -->
+                            <input type="submit" value="Obrisi" class="submit" id="reset" name="reset" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/nouislider/nouislider.min.js"></script>
+    <script src="vendor/wnumb/wNumb.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="js/main.js"></script> 
+</body>
+</html>
