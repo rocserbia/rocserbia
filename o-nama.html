@@ -51,7 +51,7 @@
 
 function count()
 {
-	var theUrl = 'http://rocserbiaback.herokuapp.com/Teams/count';
+	var theUrl = 'https://rocserbiaback.herokuapp.com/Teams/count';
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", theUrl, true ); // false for synchronous request
     xmlHttp.send( null );	
@@ -76,7 +76,7 @@ function kurac()
                }
                                }
            };
-           xhttp.open("GET", "http://rocserbiaback.herokuapp.com/Teams/count", false);
+           xhttp.open("GET", "https://rocserbiaback.herokuapp.com/Teams/count", false);
            xhttp.setRequestHeader("Content-type", "application/json");
            xhttp.send(null);
 }
